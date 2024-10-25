@@ -10,7 +10,7 @@ export default {
   },
   mounted() {
     axios
-        .get('http://localhost:3000/api/data')
+        .get('https://renderback-miis.onrender.com')
         .then(response => {
           this.data = response.data;
         })
