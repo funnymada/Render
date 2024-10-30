@@ -12,7 +12,7 @@ export default {
   },
   mounted() {
     axios
-        .get(address)
+        .get('https://renderback-miis.onrender.com')
         .then(response => {
           this.data = response.data;
         })
