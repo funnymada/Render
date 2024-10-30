@@ -1,6 +1,8 @@
 <script>
 import {RouterLink, RouterView} from 'vue-router'
 import axios from 'axios';
+require('dotenv').config();
+const address = process.env.ADDRESS;
 
 export default {
   data() {
@@ -10,7 +12,7 @@ export default {
   },
   mounted() {
     axios
-        .get('https://renderback-miis.onrender.com')
+        .get(address)
         .then(response => {
           this.data = response.data;
         })
