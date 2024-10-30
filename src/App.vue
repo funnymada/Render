@@ -13,6 +13,7 @@ export default {
     axios
         .get('https://renderback-miis.onrender.com')
         .then(response => {
+          console.log(response);
           this.data = response.data;
         })
         .catch(error => {
