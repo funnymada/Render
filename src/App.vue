@@ -11,7 +11,7 @@ export default {
   },
   mounted() {
     axios
-        .get('https://renderback-miis.onrender.com')
+        .get('https://render-b54d.onrender.com')
         .then(response => {
           console.log(response);
           this.data = response.data;
